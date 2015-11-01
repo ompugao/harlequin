@@ -36,6 +36,8 @@ let s:lilac = ['#AE81FF', 141]
 
 let s:frost = ['#2C89C7', 68] 
 
+let s:comment = ['#eeeeee', 7]
+
 let s:sunny = ['#FFFC7F', 228]
 
 let s:mordant = ['#AE0C00', 124]
@@ -140,11 +142,11 @@ call s:Highlight('Debug',           s:lime, '', 'bold', '')
 call s:Highlight('Function',        s:gold, '', '', '')
 call s:Highlight('Identifier',      s:gold, '', '', '')
 
-call s:Highlight('Comment',         s:frost, '', '', '')
-call s:Highlight('CommentEmail',    s:frost, '', 'underline', '')
-call s:Highlight('CommentUrl',      s:frost, '', 'underline', '')
-call s:Highlight('SpecialComment',  s:frost, '', 'bold', '')
-call s:Highlight('Todo',            s:frost, '', 'bold', '')
+call s:Highlight('Comment',         s:comment, '', '', '')
+call s:Highlight('CommentEmail',    s:comment, '', 'underline', '')
+call s:Highlight('CommentUrl',      s:comment, '', 'underline', '')
+call s:Highlight('SpecialComment',  s:comment, '', 'bold', '')
+call s:Highlight('Todo',            s:comment, '', 'bold', '')
 
 call s:Highlight('String',          s:sunny, '', '', '') 
 call s:Highlight('SpecialKey',      s:lilac, '', 'bold', '')
