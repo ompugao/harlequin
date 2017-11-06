@@ -15,7 +15,7 @@ if !has("gui_running") && &t_Co != 256
     finish
 endif
 
-let colors_name = "harlequin"
+let g:colors_name = "harlequin"
 
 let s:text = ['#F8F8F2', 15]
 let s:text_bg = ['#1C1B1A', 234]
@@ -37,6 +37,8 @@ let s:brick = ['#CB4154', 167]
 let s:lilac = ['#C8A2C8', 177]
 
 let s:frost = ['#2C89C7', 68] 
+
+let s:comment = ['#eeeeee', 7]
 
 let s:sunny = ['#FFFC7F', 228]
 
@@ -142,11 +144,11 @@ call s:Highlight('Debug',           s:lime, '', 'bold', '')
 call s:Highlight('Function',        s:gold, '', '', '')
 call s:Highlight('Identifier',      s:gold, '', '', '')
 
-call s:Highlight('Comment',         s:frost, '', '', '')
-call s:Highlight('CommentEmail',    s:frost, '', 'underline', '')
-call s:Highlight('CommentUrl',      s:frost, '', 'underline', '')
-call s:Highlight('SpecialComment',  s:frost, '', 'bold', '')
-call s:Highlight('Todo',            s:frost, '', 'bold', '')
+call s:Highlight('Comment',         s:comment, '', '', '')
+call s:Highlight('CommentEmail',    s:comment, '', 'underline', '')
+call s:Highlight('CommentUrl',      s:comment, '', 'underline', '')
+call s:Highlight('SpecialComment',  s:comment, '', 'bold', '')
+call s:Highlight('Todo',            s:comment, '', 'bold', '')
 
 call s:Highlight('String',          s:sunny, '', '', '') 
 call s:Highlight('SpecialKey',      s:lilac, '', 'bold', '')
